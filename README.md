@@ -24,7 +24,7 @@ do
 done
 ```
 
-## Beispiel TWIG Filter ☕️
+## Beispiel-Twig-Filter ☕️
 
 ### Zufälliges Emoji
 
