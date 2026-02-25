@@ -16,6 +16,7 @@ randpomEmoji
     {%- endblock -%}
 ```
 
+   
 ### Hervorgehobene Nachrichten mit ⭐️ markieren
 
 isFeatured
@@ -24,6 +25,7 @@ isFeatured
     <h2>{{ linkHeadline|sanitize_html('contao')|isFeatured(featured)|raw }}</h2>
 ```
 
+   
 ### Text sinnvoll kürzen
 
 smartTruncate
