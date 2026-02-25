@@ -6,6 +6,12 @@ Hier findest du meine Beispiele aus der Contao Show #24 vom 25.02.2026.
 
 Die Show findest du hier auf YouTube: https://to.contao.org/tv/show/24
 
+## Loupe-Integration
+
+```
+composer require contao/loupe-bridge
+```
+
 ## Beispiel TWIG Filter
 
 ### Zufälliges Emoji
@@ -13,9 +19,9 @@ Die Show findest du hier auf YouTube: https://to.contao.org/tv/show/24
 randomEmoji
 
 ```
-    {% block headline_inner %}
-        {{ headline.text|insert_tag_raw|randomEmoji }}
-    {% endblock %}
+{% block headline_inner %}
+    {{ headline.text|insert_tag_raw|randomEmoji }}
+{% endblock %}
 ```
 
    
@@ -24,7 +30,7 @@ randomEmoji
 isFeatured
 
 ```
-    <h2>{{ linkHeadline|sanitize_html('contao')|isFeatured(featured)|raw }}</h2>
+<h2>{{ linkHeadline|sanitize_html('contao')|isFeatured(featured)|raw }}</h2>
 ```
 
    
@@ -33,7 +39,7 @@ isFeatured
 smartTruncate
 
 ```
-    {{ teaser|default|sanitize_html('contao')|csp_inline_styles|insert_tag_raw|smartTruncate(120)|raw }}
+{{ teaser|default|sanitize_html('contao')|csp_inline_styles|insert_tag_raw|smartTruncate(120)|raw }}
 ```
 
 ![Die Contao Show (Folge 24) – Hallo Contao 5.7](docs/contao-show-episode-024.jpg)
