@@ -20,10 +20,14 @@ randpomEmoji
 
 isFeatured
 
-```<h2>{{ linkHeadline|sanitize_html('contao')|isFeatured(featured)|raw }}</h2>```
+```
+    <h2>{{ linkHeadline|sanitize_html('contao')|isFeatured(featured)|raw }}</h2>
+```
 
 ### Text sinnvoll kürzen
 
 smartTruncate
 
-```{{ teaser|default|sanitize_html('contao')|csp_inline_styles|insert_tag_raw|smartTruncate(120)|raw }}```
+```
+    {{ teaser|default|sanitize_html('contao')|csp_inline_styles|insert_tag_raw|smartTruncate(120)|raw }}
+```
