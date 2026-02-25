@@ -8,11 +8,11 @@ Hier findest du meine Beispiele aus der Contao Show #24 vom 25.02.2026.
 
 ### Zufälliges Emoji
 
-randpomEmoji
+randomEmoji
 
 ```
     {%- block headline_inner -%}
-        {{ headline.text|insert_tag_raw|randpomEmoji }}
+        {{ headline.text|insert_tag_raw|randomEmoji }}
     {%- endblock -%}
 ```
 
