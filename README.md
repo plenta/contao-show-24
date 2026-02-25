@@ -13,9 +13,9 @@ Die Show findest du hier auf YouTube: https://to.contao.org/tv/show/24
 randomEmoji
 
 ```
-    {%- block headline_inner -%}
+    {% block headline_inner %}
         {{ headline.text|insert_tag_raw|randomEmoji }}
-    {%- endblock -%}
+    {% endblock %}
 ```
 
    
