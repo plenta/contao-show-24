@@ -33,3 +33,5 @@ smartTruncate
 ```
     {{ teaser|default|sanitize_html('contao')|csp_inline_styles|insert_tag_raw|smartTruncate(120)|raw }}
 ```
+
+![Die Contao Show (Folge 24) – Hallo Contao 5.7](docs/contao-show-episode-024.jpg)
