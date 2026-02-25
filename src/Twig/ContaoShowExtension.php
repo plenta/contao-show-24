@@ -23,13 +23,13 @@ class ContaoShowExtension extends AbstractExtension
     public function getFilters(): array
     {
         return [
-            new TwigFilter('randpomEmoji', [$this, 'randpomEmoji']),
+            new TwigFilter('randomEmoji', [$this, 'randomEmoji']),
             new TwigFilter('isFeatured', [$this, 'isFeatured'], ['is_safe' => ['html']]),
             new TwigFilter('smartTruncate', [$this, 'smartTruncate']),
         ];
     }
 
-    public function randpomEmoji(mixed $value = null): string
+    public function randomEmoji(mixed $value = null): string
     {
         if ($value === null) {
             return $this->emojis[array_rand($this->emojis)];
@@ -54,7 +54,6 @@ class ContaoShowExtension extends AbstractExtension
         }
 
         $cut = mb_substr($text, 0, $length);
-
         $cut = mb_substr($cut, 0, mb_strrpos($cut, ' '));
 
         return rtrim($cut, ' .,') . '…';
