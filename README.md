@@ -6,13 +6,25 @@ Hier findest du meine Beispiele aus der Contao Show #24 vom 25.02.2026.
 
 Die Show findest du hier auf YouTube: https://to.contao.org/tv/show/24
 
-## Loupe-Integration
+## Loupe-Integration 🔍
 
 ```
 composer require contao/loupe-bridge
 ```
 
-## Beispiel TWIG Filter
+Script zur lokalen Ausführung des Contao-Cronjobs
+
+```
+#!/bin/bash
+while true
+do
+  echo "Der Contao Cron läuft ($(date '+%H:%M') Uhr)"
+  php bin/console contao:cron
+  sleep 30
+done
+```
+
+## Beispiel TWIG Filter ☕️
 
 ### Zufälliges Emoji
 
