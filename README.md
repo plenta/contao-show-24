@@ -2,7 +2,7 @@
 
 # Contao Show #24
 
-Hier findest du meine Beispiele aus der Contao Show #24 vom 25.02.2026.
+Hier findest du meine Beispiele aus der Contao Show #24 vom 26.02.2026.
 
 Die Show findest du hier auf YouTube: https://to.contao.org/tv/show/24
 
